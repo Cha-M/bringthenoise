@@ -71,7 +71,6 @@ float fromWave3d(float axisPositionX, float axisPositionY, float axisPositionZ, 
 
 void printNoise(float zIncrement)
 {
-
         float xSize = 50.0;
         float ySize = 50.0;
 
@@ -103,15 +102,12 @@ void printNoise(float zIncrement)
 
                 if (jInt == int(xSize)) {chara1[iindex] = '\n';}
 
-
-
             }
 
             chara1[int(iInt*xSize+jInt-1)] = '\0';
             jInt++;
 
         }
-
     cout << chara1 << endl;
 
 }
@@ -126,15 +122,13 @@ void printFlow()
     increment = fmod(increment, 1.0);
     //system("pause");
     Sleep(200);
-
     printFlow();
 }
 
 int main()
 {
-    srand((int)time(NULL));
+    srand(time(NULL));
     int i = 0;
-
     for (vector<vector<int>> & r : ten_rand_xyz)
     {
         for (vector<int> & s : r)
