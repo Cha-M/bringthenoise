@@ -92,7 +92,7 @@ void printNoise(float zIncrement)
                 float index = (xSize * iInt) + jInt;
                 int iindex = int(index);
 
-                float k = fromWave3d(i, j, zIncrement, ten_rand_xyz);//THIS wat i causing it?
+                float k = fromWave3d(i, j, zIncrement, ten_rand_xyz);
 
                 if (k > 80) {        chara1[iindex] = 219;}
                 else if (k > 60) {   chara1[iindex] = 178;}
@@ -135,7 +135,6 @@ int main()
         {
             for (int & t : s)
             {
-                //cout << i << ", ";
                 t = seed_rand();
                 i++;
             }
